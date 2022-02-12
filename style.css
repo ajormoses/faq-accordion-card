@@ -1,0 +1,198 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  background-color: hsl(273, 75%, 66%);
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  width: 90%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container-content {
+  background-color: white;
+  height: 550px;
+  width: 100%;
+  border-radius: 25px;
+}
+
+.container-content-img {
+  background: url("./images/illustration-woman-online-mobile.svg") no-repeat
+    center center;
+  background-size: contain;
+  height: 40%;
+  width: 72%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -50px;
+  filter: drop-shadow(1px 30px 1px rgb(153, 151, 151));
+}
+
+.container-content-img-desktop {
+  display: none;
+}
+
+.container-section {
+  border-bottom: 1px solid rgb(153, 149, 149);
+  width: 80%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 0.8rem;
+  padding-bottom: 5px;
+}
+
+.container-text-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.appear-text {
+  font-size: 0.8rem;
+  text-align: left;
+  display: none;
+}
+
+.appear.appear-text {
+  display: block !important;
+}
+
+.show.toggle {
+  transform: rotate(180deg);
+  transition: all ease 0.5s;
+}
+
+.bold.container-text-content {
+  font-weight: bold;
+}
+
+.container-text-content img {
+  height: 7px;
+  width: 9px;
+}
+
+.container-text {
+  position: relative;
+  top: 120px;
+}
+
+.container-text h1 {
+  font-size: 2rem;
+}
+
+@media only screen and (min-width: 1000px) {
+  body {
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  }
+  
+  .container {
+    width: 900px;
+    overflow: hidden;
+  }
+
+  .container-text h1 {
+    font-size: 2rem;
+    padding-left: 45px;
+  }
+
+  .container-text {
+    position: relative;
+    top: 45px;
+    width: 50%;
+    left: 45%;
+    text-align: left;
+  }
+
+  .container-content {
+    height: 500px;
+    width: 80%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .container-content-img {
+    background: none;
+  }
+
+  .container-content-img-desktop {
+    display: block;
+    height: 100%;
+    width: 40%;
+    position: absolute;
+    left: -50px;
+    top: 50px;
+
+  }
+
+  .desktop-woman {
+    position: relative;
+    top: 40px;
+    width: 120%;
+    filter: drop-shadow(1px 50px 1px rgb(241, 240, 240));
+  }
+
+  .desktop-box {
+    position: fixed;
+    top: 40%;
+    left: -1%;
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
+
+  .desktop-box {
+    position: fixed;
+    top: 43%;
+    left: -1%;
+  }
+
+
+@media only screen and (min-width: 1400px) {
+  .container {
+    width: 1200px;
+  }
+
+  .desktop-box {
+    position: fixed;
+    top: 47%;
+    left: 2%;
+  }
+
+  .container-content {
+    height: 500px;
+    width: 80%;
+  }
+
+  .container-content-img {
+    height: 100%;
+    width: 40%;
+    position: absolute;
+    left: 4%;
+    transform: none;
+    top: -20px;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .container {
+    width: 1400px;
+  }
+}
